@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { ChevronDown, X, SlidersHorizontal } from 'lucide-react';
+import { ChevronDown, X, SlidersHorizontal, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
 import {
   Select,
   SelectContent,
@@ -37,6 +38,8 @@ interface ServiceFiltersProps {
   sortBy: string;
   onSortChange: (sort: string) => void;
   totalResults: number;
+  searchQuery: string;
+  onSearchChange: (query: string) => void;
 }
 
 interface FilterDropdownProps {
@@ -186,6 +189,8 @@ export const ServiceFilters = ({
   sortBy,
   onSortChange,
   totalResults,
+  searchQuery,
+  onSearchChange,
 }: ServiceFiltersProps) => {
   const clearAllFilters = () => {
     onFiltersChange({
@@ -194,6 +199,7 @@ export const ServiceFilters = ({
       lengths: [],
       priceRange: [],
     });
+    onSearchChange('');
   };
 
   const toggleFilter = (key: keyof Filters, value: string) => {
@@ -235,6 +241,18 @@ export const ServiceFilters = ({
 
   return (
     <div className="space-y-4">
+      {/* Search Bar */}
+      <div className="relative">
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+        <Input
+          type="text"
+          placeholder="Search services..."
+          value={searchQuery}
+          onChange={(e) => onSearchChange(e.target.value)}
+          className="pl-10 h-11 bg-card border-border"
+        />
+      </div>
+
       {/* Desktop Filters */}
       <div className="hidden md:flex items-center justify-between gap-4 flex-wrap">
         <div className="flex items-center gap-2 flex-wrap">

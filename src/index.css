@@ -6,39 +6,39 @@
 
 @layer base {
   :root {
-    /* Core palette - Elegant brown & cream from logo */
-    --background: 30 15% 96%;
-    --foreground: 20 18% 20%;
+    /* Core palette - From logo: #442d27 and #ead5bd */
+    --background: 32 53% 95%;
+    --foreground: 12 27% 21%;
 
-    --card: 30 20% 98%;
-    --card-foreground: 20 18% 20%;
+    --card: 32 53% 98%;
+    --card-foreground: 12 27% 21%;
 
-    --popover: 30 20% 98%;
-    --popover-foreground: 20 18% 20%;
+    --popover: 32 53% 98%;
+    --popover-foreground: 12 27% 21%;
 
-    /* Primary - Deep chocolate brown */
-    --primary: 20 18% 20%;
-    --primary-foreground: 30 25% 90%;
+    /* Primary - Deep chocolate brown #442d27 */
+    --primary: 12 27% 21%;
+    --primary-foreground: 32 53% 93%;
 
-    /* Secondary - Warm cream */
-    --secondary: 30 25% 90%;
-    --secondary-foreground: 20 18% 20%;
+    /* Secondary - Warm cream #ead5bd */
+    --secondary: 32 53% 83%;
+    --secondary-foreground: 12 27% 21%;
 
     /* Muted tones */
-    --muted: 30 15% 92%;
-    --muted-foreground: 20 10% 45%;
+    --muted: 32 40% 90%;
+    --muted-foreground: 12 20% 40%;
 
-    /* Accent - Rose gold touch */
-    --accent: 15 30% 85%;
-    --accent-foreground: 20 18% 20%;
+    /* Accent - Lighter cream variation */
+    --accent: 32 45% 88%;
+    --accent-foreground: 12 27% 21%;
 
     /* Destructive */
     --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 15% 85%;
-    --input: 30 15% 88%;
-    --ring: 20 18% 30%;
+    --border: 32 35% 80%;
+    --input: 32 40% 85%;
+    --ring: 12 27% 30%;
 
     --radius: 0.5rem;
 
@@ -47,18 +47,18 @@
     --whatsapp-foreground: 0 0% 100%;
 
     /* Price badge */
-    --price: 20 18% 20%;
-    --price-foreground: 30 25% 90%;
+    --price: 12 27% 21%;
+    --price-foreground: 32 53% 93%;
 
     /* Sidebar */
-    --sidebar-background: 30 20% 98%;
-    --sidebar-foreground: 20 18% 20%;
-    --sidebar-primary: 20 18% 20%;
-    --sidebar-primary-foreground: 30 25% 90%;
-    --sidebar-accent: 30 15% 92%;
-    --sidebar-accent-foreground: 20 18% 20%;
-    --sidebar-border: 30 15% 85%;
-    --sidebar-ring: 20 18% 30%;
+    --sidebar-background: 32 53% 98%;
+    --sidebar-foreground: 12 27% 21%;
+    --sidebar-primary: 12 27% 21%;
+    --sidebar-primary-foreground: 32 53% 93%;
+    --sidebar-accent: 32 40% 90%;
+    --sidebar-accent-foreground: 12 27% 21%;
+    --sidebar-border: 32 35% 80%;
+    --sidebar-ring: 12 27% 30%;
   }
 }
 
