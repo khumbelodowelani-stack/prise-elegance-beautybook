@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Phone, MessageCircle, MapPin, Clock, Instagram } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
-const WHATSAPP_NUMBER = '27000000000';
+const WHATSAPP_NUMBER = '27763781015';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -101,13 +101,13 @@ const Contact = () => {
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <Phone className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
+                <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
                     <a
-                      href="tel:+27000000000"
+                      href="tel:+27763781015"
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
-                      +27 00 000 0000
+                      +27 76 378 1015
                     </a>
                   </div>
                 </div>
