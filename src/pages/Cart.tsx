@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useCart } from '@/context/CartContext';
 
-const WHATSAPP_NUMBER = '27000000000'; // Replace with actual number
+const WHATSAPP_NUMBER = '27763781015';
 
 const Cart = () => {
   const { items, totalPrice, clearCart } = useCart();

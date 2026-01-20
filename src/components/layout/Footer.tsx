@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Phone, MapPin } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import logo from '@/assets/logo.png';
 
 export const Footer = () => {
@@ -40,24 +40,11 @@ export const Footer = () => {
             <h4 className="font-serif text-lg font-semibold mb-4">Contact Us</h4>
             <div className="flex flex-col gap-3">
               <a 
-                href="tel:+27000000000" 
+                href="tel:+27763781015" 
                 className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                +27 00 000 0000
-              </a>
-              <div className="flex items-center gap-2 text-sm text-primary-foreground/80">
-                <MapPin className="h-4 w-4" />
-                Johannesburg, South Africa
-              </div>
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-              >
-                <Instagram className="h-4 w-4" />
-                @priseelegance
+                +27 76 378 1015
               </a>
             </div>
           </div>

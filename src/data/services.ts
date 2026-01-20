@@ -293,6 +293,13 @@ export const services: Service[] = [
     category: 'extras',
     description: 'Ultimate full glam nail experience with all the extras.',
   },
+  {
+    id: 'extra-house-call',
+    name: 'House Call (Makeup)',
+    price: 500,
+    category: 'extras',
+    description: 'Professional makeup service at your location. We come to you!',
+  },
 ];
 
 export const categories = [
