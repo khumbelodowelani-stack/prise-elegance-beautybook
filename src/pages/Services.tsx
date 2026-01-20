@@ -24,6 +24,7 @@ const Services = () => {
     priceRange: [],
   });
   const [sortBy, setSortBy] = useState('popular');
+  const [searchQuery, setSearchQuery] = useState('');
   const [selectedService, setSelectedService] = useState<Service | null>(null);
   const [dialogOpen, setDialogOpen] = useState(false);
 
@@ -34,6 +35,17 @@ const Services = () => {
 
   const filteredServices = useMemo(() => {
     let result = [...services];
+
+    // Apply search filter
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      result = result.filter(
+        (s) =>
+          s.name.toLowerCase().includes(query) ||
+          s.description.toLowerCase().includes(query) ||
+          s.category.toLowerCase().includes(query)
+      );
+    }
 
     // Apply category filter
     if (filters.categories.length > 0) {
@@ -79,7 +91,7 @@ const Services = () => {
     }
 
     return result;
-  }, [filters, sortBy]);
+  }, [filters, sortBy, searchQuery]);
 
   return (
     <Layout>
@@ -109,6 +121,8 @@ const Services = () => {
               sortBy={sortBy}
               onSortChange={setSortBy}
               totalResults={filteredServices.length}
+              searchQuery={searchQuery}
+              onSearchChange={setSearchQuery}
             />
           </div>
 
