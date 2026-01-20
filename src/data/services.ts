@@ -14,7 +14,7 @@ export const services: Service[] = [
   // Acrylic Nails
   {
     id: 'acrylic-plain-overlay',
-    name: 'Plain Acrylic Overlay (No Tips)',
+    name: 'Plain Acrylic Overlay (No Tips) ',
     price: 230,
     category: 'acrylic',
     style: 'plain',
